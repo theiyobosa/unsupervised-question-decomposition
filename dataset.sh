@@ -6,3 +6,4 @@
 
 bash get-hotpotqa-data.sh
 bash get-squad2-data.sh
+bash get-mfaq-data.sh

@@ -1,7 +1,19 @@
-fastText/
+/fastText/
+
 /hotpotqa/
 /squad2/
+/mfaq/
+
 dev_data.txt
 train_data.txt
+
+dev_data_mfaq.txt
+train_data_mfaq.txt
+
+dev_data_mfaq_predict.txt
+train_data_mfaq_predict.txt
+
+fasttext_model.bin
+fasttext_model.vec
 
 explore.ipynb

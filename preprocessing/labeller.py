@@ -31,10 +31,16 @@ if __name__ == '__main__':
     for _, q in tqdm(json_file.items(), desc=f'Labelling questions from {json_filepath}: '):
         if wh:
             if re.match(wh_pattern, q.lower()):
-                text = f'{label} {q}'
+                if args['label'] is not None:
+                    text = f'{label} {q}'
+                else:
+                    text = q
                 all_questions.append(text)
         else:
-            text = f'{label} {q}'
+            if args['label'] is not None:
+                text = f'{label} {q}'
+            else:
+                text = q
             all_questions.append(text)
 
     questions = '\n'.join(all_questions)

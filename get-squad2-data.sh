@@ -34,5 +34,5 @@ dev_json_file=$squad2_q_only_dir/${squad2_filenames[1]}
 
 wh=true
 
-python preprocessing/labeller.py -j $train_json_file -t $train_data -l __label__2 --wh $wh
-python preprocessing/labeller.py -j $dev_json_file -t $dev_data -l __label__2 --wh $wh
+python preprocessing/labeller.py -j $train_json_file -t $train_data -l __label__S --wh $wh
+python preprocessing/labeller.py -j $dev_json_file -t $dev_data -l __label__S --wh $wh
