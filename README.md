@@ -59,3 +59,8 @@ Make predictions on the MFAQ dataset from the trained classifier:
 bash predict-fasttext-classifier.sh
 ```
 
+Upload the data to Elasticsearch with:
+
+```bash
+bash upload-to-elasticsearch.sh
+```
