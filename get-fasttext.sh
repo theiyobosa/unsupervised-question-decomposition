@@ -8,7 +8,11 @@ if [ ! -d fastText ]; then
 
     echo "Installing fastText"
     cd fastText
+
+    pip install .
+
     make
+
     cd ..
 
     echo "fastText installed"

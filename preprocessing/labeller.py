@@ -1,6 +1,5 @@
 import argparse
 import json
-from os.path import basename, join
 import re
 
 from tqdm import tqdm
